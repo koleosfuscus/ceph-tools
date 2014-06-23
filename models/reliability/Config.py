@@ -35,6 +35,7 @@ class Config:
 
         self.period = 1.0 * YEAR
         self.verbose = "all"
+        self.model = "disk"
 
         self.disk_type = "Enterprise"
         self.disk_size = 2 * TiB
@@ -59,6 +60,7 @@ class Config:
         self.stripe_length = 1
 
         self.remote_sites = 1
+        self.remote_copies = 1
         self.remote_recover = 10 * MiB
         self.remote_latency = 0.0 * SECOND
         self.majeure = FitRate(.001, YEAR)
